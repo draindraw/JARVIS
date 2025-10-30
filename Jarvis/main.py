@@ -9,7 +9,7 @@ recognizer = sr.Recognizer()
 recognizer.energy_threshold = 4000  # reduce sensitivity
 recognizer.dynamic_energy_threshold = True
 engine = pyttsx3.init()
-news_api_key = "e3faf95c20f842bcab7927ab7ff07c77"  # Replace with your News API key
+news_api_key = "APIKEY" 
 
 def speak(text):
     temp_engine = pyttsx3.init()   # use fresh engine each time
@@ -78,4 +78,5 @@ if __name__ == "__main__":
             print("Could not understand audio")
             continue
         except Exception as e:
+
             print(f"Error: {e}")
